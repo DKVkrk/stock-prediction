@@ -10,7 +10,6 @@ An interactive **Streamlit dashboard** to predict future stock prices using **Fa
 3. [Installation](#-installation)  
 4. [Usage](#-usage)  
 5. [Project Structure](#-project-structure)  
-6. [Screenshots](#-screenshots)  
 7. [Requirements](#-requirements)  
 8. [Acknowledgements](#-acknowledgements)  
 
@@ -87,3 +86,33 @@ Edit
 │── app.py                # Main Streamlit application
 │── requirements.txt       # Dependencies
 │── README.md              # Documentation
+📷 Screenshots
+Dashboard Overview
+(Add screenshot here)
+
+Forecast Plot
+(Add screenshot here)
+
+📦 Requirements
+Add the following to requirements.txt:
+
+nginx
+Copy
+Edit
+streamlit
+yfinance
+prophet
+matplotlib
+scikit-learn
+pandas
+numpy
+🙌 Acknowledgements
+Yahoo Finance – Stock data
+
+Facebook Prophet – Time series forecasting
+
+Streamlit – Dashboard framework
+
+yaml
+Copy
+Edit
