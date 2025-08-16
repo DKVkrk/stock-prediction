@@ -55,6 +55,8 @@ Choose days to predict
 Click Run Prediction
 Download forecast results as CSV
 
+---
+
 ## 🙌 Acknowledgements
 Yahoo Finance – Stock data provider
 Streamlit – Interactive dashboard framework
