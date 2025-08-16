@@ -78,13 +78,6 @@ This Streamlit-powered dashboard allows users to predict future stock prices usi
    git clone https://github.com/your-username/stock-price-prediction-dashboard.git
    cd stock-price-prediction-dashboard
 
-Create a virtual environment (recommended)
-
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-
 Install dependencies
 pip install -r requirements.txt
 
@@ -99,23 +92,6 @@ Click Run Prediction
 Download forecast results as CSV
 
 
-📂 Project Structure
-📁 stock-price-prediction-dashboard
-│── app.py                # Main Streamlit application
-│── requirements.txt       # Dependencies
-│── README.md              # Documentation
-
-
-📦 Requirements
-Add the following to requirements.txt:
-
-streamlit
-yfinance
-prophet
-matplotlib
-scikit-learn
-pandas
-numpy
 
 
 🙌 Acknowledgements
