@@ -1,114 +1,105 @@
-# 📈 Stock Price Prediction Dashboard  
+# 📈 Stock Price Prediction Dashboard
 
-An interactive **Streamlit dashboard** to predict future stock prices using **Facebook Prophet** and stock data from **Yahoo Finance**.  
-
----
-
-## 📌 Table of Contents  
-1. [Features](#-features)  
-2. [Tech Stack](#-tech-stack)  
-3. [Installation](#-installation)  
-4. [Usage](#-usage)  
-5. [Project Structure](#-project-structure)   
-7. [Requirements](#-requirements)  
-8. [Acknowledgements](#-acknowledgements)  
+This Streamlit-powered dashboard allows users to predict future stock prices using the **Facebook Prophet** time series model. It fetches historical stock data from **Yahoo Finance**, trains a forecasting model, and visualizes predictions along with performance metrics.
 
 ---
 
-## 🚀 Features  
-- ✅ Fetch historical stock data from **Yahoo Finance**  
-- ✅ Forecast future prices using **Prophet**  
-- ✅ Visualize **actual vs. predicted** stock prices  
-- ✅ Display **confidence intervals** for predictions  
-- ✅ Show **model performance metrics**:  
-  - MAPE (Mean Absolute Percentage Error)  
-  - RMSE (Root Mean Squared Error)  
-  - MSE (Mean Squared Error)  
-- ✅ Trend & seasonality decomposition  
-- ✅ Export forecast results as **CSV**  
-- ✅ Simple, interactive **Streamlit UI**  
+## 🚀 Features
+
+- 📊 Interactive dashboard with customizable inputs
+- 🔮 Forecast future stock prices using Prophet
+- 📅 Trend and seasonality decomposition
+- 📉 Performance metrics: MAPE, MSE, RMSE
+- 📂 View and download raw and forecasted data
+- 🎨 Clean UI with custom styling
 
 ---
 
-## 🛠️ Tech Stack  
-- **Python**  
-- **Streamlit** – Web UI  
-- **yfinance** – Stock data  
-- **Prophet** – Forecasting model  
-- **Matplotlib** – Visualization  
-- **scikit-learn** – Metrics  
-- **Pandas & NumPy** – Data handling  
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit** – UI framework
+- **yfinance** – Stock data retrieval
+- **Prophet** – Time series forecasting
+- **Matplotlib** – Plotting
+- **scikit-learn** – Error metrics
+- **Pandas & NumPy** – Data manipulation
 
 ---
 
-## ⚙️ Installation  
+## 📦 Installation
 
-1. **Clone the repository**  
-```bash
-git clone https://github.com/your-username/stock-price-prediction-dashboard.git
-cd stock-price-prediction-dashboard
-Create a virtual environment (recommended)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/stock-price-prediction-dashboard.git
+   cd stock-price-prediction-dashboard
+Sure! Here's a comprehensive README.md for your Stock Price Prediction Dashboard, written in Markdown:
+# 📈 Stock Price Prediction Dashboard
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-Install dependencies
+This Streamlit-powered dashboard allows users to predict future stock prices using the **Facebook Prophet** time series model. It fetches historical stock data from **Yahoo Finance**, trains a forecasting model, and visualizes predictions along with performance metrics.
 
-bash
-Copy
-Edit
+---
+
+## 🚀 Features
+
+- 📊 Interactive dashboard with customizable inputs
+- 🔮 Forecast future stock prices using Prophet
+- 📅 Trend and seasonality decomposition
+- 📉 Performance metrics: MAPE, MSE, RMSE
+- 📂 View and download raw and forecasted data
+- 🎨 Clean UI with custom styling
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit** – UI framework
+- **yfinance** – Stock data retrieval
+- **Prophet** – Time series forecasting
+- **Matplotlib** – Plotting
+- **scikit-learn** – Error metrics
+- **Pandas & NumPy** – Data manipulation
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/stock-price-prediction-dashboard.git
+   cd stock-price-prediction-dashboard
+
+
+- Install dependencies
 pip install -r requirements.txt
-📊 Usage
-Run the app:
-
-bash
-Copy
-Edit
+- Run the app
 streamlit run app.py
-Enter a stock ticker (e.g., AAPL, MSFT, GOOGL)
+⚙️ Usage- Enter a valid stock ticker (e.g., AAPL, MSFT, GOOGL)
+- Select the date range for historical data
+- Choose the number of days to forecast
+- Toggle display options for trend/seasonality and raw data
+- Click Run Prediction to generate forecasts
+📊 Output- Forecast Plot: Actual vs. predicted prices with confidence intervals
+- Model Metrics: MAPE, RMSE, MSE
+- Trend & Seasonality: Prophet's decomposition plots
+- Raw Data: Historical and forecasted data tables
+- Download Option: Export forecast as CSV
+📁 File Structure├── app.py                 # Main Streamlit app
+├── README.md              # Project documentation
+├── requirements.txt       # Python dependencies
+✅ Requirements- Python 3.7+
+- Streamlit
+- yfinance
+- prophet
+- matplotlib
+- scikit-learn
+- pandas
+- numpy
+📌 Notes- The model uses a 5-day moving average as an external regressor.
+- Forecasts include confidence intervals generated by Prophet.
+- Ensure internet access for fetching stock data via yfinance.
+📄 LicenseThis project is licensed under the MIT License.🙌 Acknowledgments- Streamlit
+- Facebook Prophet
+- Yahoo Finance
 
-Select a date range
-
-Choose days to predict
-
-Click Run Prediction
-
-Download forecast results as CSV
-
-📂 Project Structure
-bash
-Copy
-Edit
-📁 stock-price-prediction-dashboard
-│── app.py                # Main Streamlit application
-│── requirements.txt       # Dependencies
-│── README.md              # Documentation
-📷 Screenshots
-Dashboard Overview
-(Add screenshot here)
-
-Forecast Plot
-(Add screenshot here)
-
-📦 Requirements
-Add the following to requirements.txt:
-
-nginx
-Copy
-Edit
-streamlit
-yfinance
-prophet
-matplotlib
-scikit-learn
-pandas
-numpy
-🙌 Acknowledgements
-Yahoo Finance – Stock data
-
-Facebook Prophet – Time series forecasting
-
-Streamlit – Dashboard framework
