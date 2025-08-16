@@ -1,83 +1,114 @@
-📈 Stock Price Prediction Dashboard
-This is a Streamlit-based web application designed to forecast future stock prices. It uses the powerful Prophet forecasting library, developed by Facebook, to predict stock movements and provides a dashboard to visualize historical data, future predictions, and model performance metrics.
+# 📈 Stock Price Prediction Dashboard  
 
-Overview
-The application fetches historical stock data from Yahoo Finance, trains a Prophet model on the data, and generates a forecast for a specified number of future days. It displays the forecast in an interactive plot, along with key performance metrics like MAPE, RMSE, and MSE. Users can easily customize the stock ticker, date range, and prediction period through a clean sidebar interface.
+An interactive **Streamlit dashboard** to predict future stock prices using **Facebook Prophet** and stock data from **Yahoo Finance**.  
 
-Features
-Customizable Ticker: Predict prices for any stock available on Yahoo Finance (e.g., AAPL, MSFT, GOOGL).
+---
 
-Flexible Date Range: Select a specific period of historical data for model training.
+## 📌 Table of Contents  
+1. [Features](#-features)  
+2. [Tech Stack](#-tech-stack)  
+3. [Installation](#-installation)  
+4. [Usage](#-usage)  
+5. [Project Structure](#-project-structure)   
+7. [Requirements](#-requirements)  
+8. [Acknowledgements](#-acknowledgements)  
 
-Adjustable Forecast Period: Choose how many days into the future you want to predict.
+---
 
-Interactive Visualization: A plot shows the actual historical prices, the predicted prices, and the confidence interval.
+## 🚀 Features  
+- ✅ Fetch historical stock data from **Yahoo Finance**  
+- ✅ Forecast future prices using **Prophet**  
+- ✅ Visualize **actual vs. predicted** stock prices  
+- ✅ Display **confidence intervals** for predictions  
+- ✅ Show **model performance metrics**:  
+  - MAPE (Mean Absolute Percentage Error)  
+  - RMSE (Root Mean Squared Error)  
+  - MSE (Mean Squared Error)  
+- ✅ Trend & seasonality decomposition  
+- ✅ Export forecast results as **CSV**  
+- ✅ Simple, interactive **Streamlit UI**  
 
-Performance Metrics: View key metrics (MAPE, MSE, RMSE) to evaluate the model's accuracy.
+---
 
-Trend and Seasonality Analysis: Visualize the underlying trend and seasonality components of the stock price.
+## 🛠️ Tech Stack  
+- **Python**  
+- **Streamlit** – Web UI  
+- **yfinance** – Stock data  
+- **Prophet** – Forecasting model  
+- **Matplotlib** – Visualization  
+- **scikit-learn** – Metrics  
+- **Pandas & NumPy** – Data handling  
 
-Data Export: Download the generated forecast data as a CSV file.
+---
 
-Requirements
-To run this application, you need to have Python and pip installed.
+## ⚙️ Installation  
 
-The required Python libraries are:
+1. **Clone the repository**  
+```bash
+git clone https://github.com/your-username/stock-price-prediction-dashboard.git
+cd stock-price-prediction-dashboard
+Create a virtual environment (recommended)
 
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+Install dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+📊 Usage
+Run the app:
+
+bash
+Copy
+Edit
+streamlit run app.py
+Enter a stock ticker (e.g., AAPL, MSFT, GOOGL)
+
+Select a date range
+
+Choose days to predict
+
+Click Run Prediction
+
+Download forecast results as CSV
+
+📂 Project Structure
+bash
+Copy
+Edit
+📁 stock-price-prediction-dashboard
+│── app.py                # Main Streamlit application
+│── requirements.txt       # Dependencies
+│── README.md              # Documentation
+📷 Screenshots
+Dashboard Overview
+(Add screenshot here)
+
+Forecast Plot
+(Add screenshot here)
+
+📦 Requirements
+Add the following to requirements.txt:
+
+nginx
+Copy
+Edit
 streamlit
-
 yfinance
-
 prophet
-
 matplotlib
-
 scikit-learn
-
-numpy
-
 pandas
+numpy
+🙌 Acknowledgements
+Yahoo Finance – Stock data
 
-How to Run
-Clone or Download the Code: Get a copy of the Python script.
+Facebook Prophet – Time series forecasting
 
-Install Required Libraries: Open your terminal or command prompt and run the following command to install all the necessary packages:
-
-pip install streamlit yfinance prophet matplotlib scikit-learn numpy pandas
-
-Note: Prophet has some dependencies, so if you encounter issues, refer to the official Prophet documentation for platform-specific installation instructions.
-
-Run the Application: From the terminal in the same directory as your Python script, execute the following command:
-
-streamlit run your_script_name.py
-
-Replace your_script_name.py with the actual name of your file. This command will launch a local web server and open the dashboard in your default web browser.
-
-Usage
-Sidebar Settings: Use the sidebar on the left to configure your prediction.
-
-Enter Ticker: Type a stock ticker symbol (e.g., AAPL for Apple) into the input field.
-
-Select Dates: Choose the start and end dates for your training data.
-
-Choose Days to Predict: Use the slider to select the number of days you want to forecast.
-
-Run Prediction: Click the Run Prediction button to generate the forecast.
-
-Explore Results: The main dashboard will update with the forecast plot, metrics, and other analysis. You can also check the boxes in the sidebar to show trend analysis or raw data tables.
-
-Technologies Used
-Streamlit: For creating the interactive web application.
-
-yfinance: For fetching historical stock market data.
-
-Prophet: A time-series forecasting library from Facebook.
-
-Matplotlib: For data visualization.
-
-Scikit-learn: For calculating model performance metrics.
-
-Pandas & NumPy: For data manipulation and numerical operations.
-
-Acknowledgments
-This project was built using the power and flexibility of the open-source libraries listed above. A special thanks to the developers and communities behind them.
+Streamlit – Dashboard framework
