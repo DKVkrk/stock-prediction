@@ -7,9 +7,8 @@ This Streamlit-powered dashboard allows users to predict future stock prices usi
 1. [Features](#-features)  
 2. [Tech Stack](#-tech-stack)  
 3. [Installation](#-installation)  
-4. [Usage](#-usage)  
-5. [Requirements](#-requirements)  
-6. [Acknowledgements](#-acknowledgements) 
+4. [Usage](#-usage) 
+5. [Acknowledgements](#-acknowledgements) 
 
 ## 🚀 Features
 
@@ -46,7 +45,7 @@ pip install -r requirements.txt
 ---
 
 
-📊 Usage
+## 📊 Usage
 
 Run the app:
 streamlit run app.py
@@ -56,12 +55,11 @@ Choose days to predict
 Click Run Prediction
 Download forecast results as CSV
 
+## 🙌 Acknowledgements
+Yahoo Finance – Stock data provider
+Streamlit – Interactive dashboard framework
+Prophet – Forecasting model
 
 
 
-🙌 Acknowledgements
-
-Yahoo Finance – Stock data
-Facebook Prophet – Time series forecasting
-Streamlit – Dashboard framework
 
