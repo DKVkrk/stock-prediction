@@ -50,29 +50,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Features
-
-- 📊 Interactive dashboard with customizable inputs
-- 🔮 Forecast future stock prices using Prophet
-- 📅 Trend and seasonality decomposition
-- 📉 Performance metrics: MAPE, MSE, RMSE
-- 📂 View and download raw and forecasted data
-- 🎨 Clean UI with custom styling
-
----
-
-## 🛠️ Tech Stack
-
-- **Python**
-- **Streamlit** – UI framework
-- **yfinance** – Stock data retrieval
-- **Prophet** – Time series forecasting
-- **Matplotlib** – Plotting
-- **scikit-learn** – Error metrics
-- **Pandas & NumPy** – Data manipulation
-
----
-
 
 📊 Usage
 
