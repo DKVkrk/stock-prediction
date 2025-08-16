@@ -40,11 +40,6 @@ This Streamlit-powered dashboard allows users to predict future stock prices usi
    ```bash
    git clone https://github.com/your-username/stock-price-prediction-dashboard.git
    cd stock-price-prediction-dashboard
-Sure! Here's a comprehensive README.md for your Stock Price Prediction Dashboard, written in Markdown:
-# 📈 Stock Price Prediction Dashboard
-
-This Streamlit-powered dashboard allows users to predict future stock prices using the **Facebook Prophet** time series model. It fetches historical stock data from **Yahoo Finance**, trains a forecasting model, and visualizes predictions along with performance metrics.
-
 Install dependencies
 pip install -r requirements.txt
 
